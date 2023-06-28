@@ -7,8 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/public")
+@Api(tags = "Public home")
 public class HomeController {
+
     @GetMapping(value = "/home")
+    @ApiOperation(value = "Show home")
     public ResponseEntity<User> home(){
         User user = new User();
         user.setName("David");
