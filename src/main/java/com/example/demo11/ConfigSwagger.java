@@ -36,7 +36,7 @@ public class ConfigSwagger {
                         "app_contact_name",
                         "app_contact_web",
                         "app_contact_email"))
-                .license("app_license")
+                .license("MIT License").licenseUrl("http://opensource.org/licenses/MIT")//
                 .build();
     }
 }
